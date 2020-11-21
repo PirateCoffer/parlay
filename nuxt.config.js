@@ -7,7 +7,7 @@ const repopath = isDev ? '' : `/${repo}`
 const siteTitle = process.env.npm_package_config_title || ''
 const siteSubtitle = process.env.npm_package_config_subtitle || ''
 const siteDescription = process.env.npm_package_description || ''
-const siteUrl = `https://aronanda.github.io/${repo}`
+const siteUrl = `https://piratecoffer.github.io/${repo}`
 
 export default {
   ssr: false,
