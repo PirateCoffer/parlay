@@ -7,7 +7,7 @@ const repopath = isDev ? '' : `/${repo}`
 const siteTitle = process.env.npm_package_config_title || ''
 const siteSubtitle = process.env.npm_package_config_subtitle || ''
 const siteDescription = process.env.npm_package_description || ''
-const siteUrl = `https://piratecoffer.github.io/${repo}`
+const siteUrl = process.env.npm_package_config_url || ''
 
 export default {
   ssr: false,
@@ -63,7 +63,6 @@ export default {
     ],
   },
   plugins: [ '~/plugins/plugins.client' ],
-  // components: true, // Auto import components - See https://nuxtjs.org/api/configuration-components
   buildModules: [
     '@nuxtjs/vuetify',
   ],
@@ -76,31 +75,5 @@ export default {
   // Content module configuration - See https://content.nuxtjs.org/configuration
   content: {},
   // vuetify module configuration - https://github.com/nuxt-community/vuetify-module
-  vuetify: {
-    // customVariables: ['~/assets/css/variables.scss'],
-    // customVariables: ['~/assets/css/variables.styl'],
-    theme: {
-      // dark: true,
-      // themes: {
-      //   dark: {
-      //     primary: colors.blue.darken2,
-      //     accent: colors.grey.darken3,
-      //     secondary: colors.amber.darken3,
-      //     info: colors.teal.lighten1,
-      //     warning: colors.amber.base,
-      //     error: colors.deepOrange.accent4,
-      //     success: colors.green.accent3
-      //   },
-      //   light: {
-      //     primary: colors.blue.darken2,
-      //     accent: colors.grey.darken3,
-      //     secondary: colors.amber.darken3,
-      //     info: colors.teal.lighten1,
-      //     warning: colors.amber.base,
-      //     error: colors.deepOrange.accent4,
-      //     success: colors.green.accent3
-      //   }
-      // }
-    }
-  },
+  vuetify: {},
 }

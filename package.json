@@ -1,10 +1,11 @@
 {
   "name": "parlay",
   "version": "1.0.0",
-  "description": "So easy a pirate could do it",
+  "description": "Trade Pirate like a pirate",
   "config": {
     "title": "Parlay",
-    "subtitle": "The Booty Trade"
+    "subtitle": "The booty trade",
+    "url": "https://piratecoffer.github.io/parlay"
   },
   "scripts": {
     "dev": "nuxt",

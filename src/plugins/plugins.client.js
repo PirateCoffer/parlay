@@ -14,7 +14,6 @@ export default async ({ store }, inject) => {
     if (mutation.type === 'user/SET_USER')
       localStorage.setItem('user', JSON.stringify(store.getters.user))
   })
-
   let record = false
   try {
     record = localStorage.getItem('user') || false
@@ -25,29 +24,4 @@ export default async ({ store }, inject) => {
   }
   if (record)
     store.commit('user/SET_USER', record)
-
-  // ctx.$cookie = process.browser 
-  //   ? require('~/services/cookie/client-cookie').default
-  //   : require('~/services/cookie/server-cookie')
-  // inject('cookie', ctx.$cookie)
-  // let csrf = _.get(ctx, 'req.xsrf')
-  // if (process.server) {
-    // ctx.beforeNuxtRender(({ nuxtState, Components }) => {
-    //   let error = _.get(ctx, 'req.error')
-    //   if (error) {
-    //     return ctx.error({ statusCode: 403, message: error })
-    //   }
-    //   nuxtState.token = csrf
-    // })
-    // ctx.app.$axios.defaults.headers.post['xsrf-token'] = ctx.req.xsrf
-    // if (ctx.req.user) {
-    //   ctx.store.commit('user/SET_USER', ctx.req.user, { root: true })
-    // }
-  // } else if (process.browser) {
-    // const storage = require('~/services/storage').default
-    // ctx.$storage = storage
-    // inject('storage', storage)
-    // // Auth:
-    // ctx.app.$axios.defaults.headers.post['xsrf-token'] = ctx.nuxtState.token
-  // }
 }
