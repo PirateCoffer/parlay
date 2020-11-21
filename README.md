@@ -1,5 +1,6 @@
 
 # Parlay
+## So easy a pirate could do it
 
 - [Website](https://PirateCoffer.github.io/parlay/)
 - [Documentation](https://PirateCoffer.github.io/parlay/docs)
