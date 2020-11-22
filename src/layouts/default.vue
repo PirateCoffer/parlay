@@ -58,7 +58,7 @@ export default {
         // { text: 'Forum', icon: 'mdi-forum', path: '/forum' },
         // { text: 'Support', icon: 'mdi-face-agent', path: '/support', access: 'auth' },
         { text: 'About', icon: 'mdi-coffee', path: '/about' },
-        { text: 'Chat', icon: 'mdi-message', path: '/chat' },
+        // { text: 'Chat', icon: 'mdi-message', path: '/chat' },
         // { text: 'Blog', icon: 'mdi-post', path: '/blog' },
         // { text: 'New Offer', icon: 'mdi-plus-circle', path: '/offer/new' },
         // { text: 'Offer', icon: 'mdi-ticket', path: '/offer/1234' },
